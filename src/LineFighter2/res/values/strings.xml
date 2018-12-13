@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LineFighter2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="move_str">移动</string>
+    <string-array name="move_arry">
+        <item>第一行第一列</item>
+        <item>第一行第二列</item>
+        <item>第一行第三列</item>
+        <item>第二行第一列</item>
+        <item>第二行第二列</item>
+        <item>第二行第三列</item>
+    </string-array>
+        <string name="please_enter_action_">please enter action ===》</string>
+
+</resources>

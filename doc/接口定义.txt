@@ -1,0 +1,46 @@
+  1. 启动程序 C++ -> java  
+2. C++ ->(server | client-192.1.1.68)
+3. C++ <-(ready 4个客户端都连上)
+4. 4个C++程序 ->(name=XXXXX)  java -> 汇总到服务端 ->  各个客户端(player1name='xxx',player2name='xxx',player3name='xxx',player4name='xxx') -> 转发给C++
+5. C++主机 ->(start='-------状态信息')  java - > 转发 给所有JAVA客户端   -> 转发给C++
+6. 4个C++程序 ->(name='xxx',action='三步动作信息') java -> 转发给服务端 -> (汇总后只交给自己的client 格式： player1Action='三步动作信息',player2Action='三步动作信息'...) -> C++主机
+7. C++主机 -> "result=('结果信息')" -> 转发给所有客户端
+8. 循环6~7
+9. C++主机 -> "gameover" -> 转发所有客户端 ->转发给所有C++ -> 如果没有连接断开  转到等待第四
+10. 一个通道断开，返回“error”
+11. 任何C++程序->(chat="XFASAD") -> 发送到服务端 -> 广播到所有客户端 ->  转发给C++
+
+
+
+
+周宇 16:22:34
+  ACE_INT32 sendChat(string content)
+周宇 16:22:46
+  class CEngine : public ACE_Task<ACE_MT_SYNCH>
+{
+private:
+	string m_ip;
+	int m_port;
+public:
+	CEngine(){m_pTcp = new CTCPClient(127.0.0.1,8888);}
+	virtual ~CEngine(){ delete m_pTcp;}
+
+	ACE_INT32 run();
+	ACE_INT32 wait(int dest);
+	ACE_INT32 uiReady(string strName,string IP, ACE_INT32 isServer)
+	{
+		m_name = strName;
+		m_serverIP = IP;
+		m_isServer = isServer;
+	}
+
+	ACE_INT32 sendChat(string content);
+
+private:
+	ACE_INT32 svc();
+	string m_name;
+	string m_serverIP;
+	ACE_INT32 m_isServer;
+	CTCPClient * m_pTcp;
+
+};

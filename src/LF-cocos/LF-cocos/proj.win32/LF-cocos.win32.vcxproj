@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F9DE2BFF-3EBF-4B39-B415-74825E094A6D}</ProjectGuid>
+    <RootNamespace>LF-cocos.win32</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)LF-cocos.tlb</TypeLibraryName>
+      <HeaderFileName>LF-cocos.h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>LF-cocos_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>LF-cocos_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..\Classes;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\cocos2dx;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\cocos2dx\include;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\cocos2dx\kazmath\include;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\cocos2dx\platform\win32;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\cocos2dx\platform\third_party\win32;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\cocos2dx\platform\third_party\win32\OGLES;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\external;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\CocosDenshion\include;..\..\..\C_lineFighter_Server\lineFighter;..\..\..\LF-cocos\LF-cocos\Classes;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\extensions;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\cocos2dx\platform\third_party\win32\pthread;.\LF-cocos\Classes\LFClient;..\Resources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>LF_COCOS;WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);E:\SVN\checkoutLF\src\LF-cocos\LF-cocos\Resources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;iconv.lib;Ws2_32.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32;..\..\..\iconv\lib;..\..\..\cocos2d-x-2.2.2\cocos2d-x-2.2.2\cocos2dx\platform\third_party\win32\libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)LF-cocos.tlb</TypeLibraryName>
+      <HeaderFileName>LF-cocos.h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>LF-cocos_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>LF-cocos_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)external;$(SolutionDir)CocosDenshion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CEngine.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CFormatUnit.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\CharaSelectScene.cpp" />
+    <ClCompile Include="..\Classes\ChrisScene1.cpp" />
+    <ClCompile Include="..\Classes\IntroScene.cpp" />
+    <ClCompile Include="..\Classes\LFClient\CClientStatusSingle.cpp" />
+    <ClCompile Include="..\Classes\LFClient\ClientStatusGameBase.cpp" />
+    <ClCompile Include="..\Classes\ParabolaTo.cpp" />
+    <ClCompile Include="AbstractMap.cpp" />
+    <ClCompile Include="LFTalkText.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapGround.cpp" />
+    <ClCompile Include="MenuControler.cpp" />
+    <ClCompile Include="PopupLayer.cpp" />
+    <ClCompile Include="..\Classes\LFClient\CClientStatus.cpp" />
+    <ClCompile Include="..\Classes\LFClient\CClientStatusGame.cpp" />
+    <ClCompile Include="..\Classes\LFClient\CClientStatusHouse.cpp" />
+    <ClCompile Include="..\Classes\LFClient\CClientStatusLogIn.cpp" />
+    <ClCompile Include="..\Classes\LFClient\CClientStatusRoom.cpp" />
+    <ClCompile Include="..\Classes\ConsoleShow.cpp" />
+    <ClCompile Include="..\Classes\LFClient\PlayerFactory.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CAction.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CChatInfo.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CFLAI.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CHouse.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CPlayer.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CProtocol.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CRoom.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CUser.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\RingBuf.cpp" />
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\communication\Ringbuffer.cpp" />
+    <ClCompile Include="..\Classes\GameScene.cpp" />
+    <ClCompile Include="..\Classes\HouseScene.cpp" />
+    <ClCompile Include="..\Classes\LogInScene.cpp" />
+    <ClCompile Include="..\Classes\RoomScene.cpp" />
+    <ClCompile Include="..\Classes\channel_cocos.cpp" />
+    <ClCompile Include="..\Classes\global_cocos.cpp" />
+    <ClCompile Include="ShowAction.cpp" />
+    <ClCompile Include="ShowScreen.cpp" />
+    <ClCompile Include="StateHandler.cpp" />
+    <ClCompile Include="TestGameScene.cpp" />
+    <ClCompile Include="tool.cpp" />
+    <ClCompile Include="CCharBattleGirl.cpp" />
+    <ClCompile Include="LFTextWithBack.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CEngine.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CFormatUnit.h" />
+    <ClInclude Include="..\Classes\CharaSelectScene.h" />
+    <ClInclude Include="..\Classes\ChrisScene1.h" />
+    <ClInclude Include="..\Classes\IntroScene.h" />
+    <ClInclude Include="..\Classes\LFClient\CClientStatus.h" />
+    <ClInclude Include="..\Classes\LFClient\CClientStatusGame.h" />
+    <ClInclude Include="..\Classes\LFClient\CClientStatusHouse.h" />
+    <ClInclude Include="..\Classes\LFClient\CClientStatusLogIn.h" />
+    <ClInclude Include="..\Classes\LFClient\CClientStatusRoom.h" />
+    <ClInclude Include="..\Classes\ConsoleShow.h" />
+    <ClInclude Include="..\Classes\LFClient\CClientStatusSingle.h" />
+    <ClInclude Include="..\Classes\LFClient\ClientStatusGameBase.h" />
+    <ClInclude Include="..\Classes\LFClient\PlayerFactory.h" />
+    <ClInclude Include="..\Classes\LFClient\status_comm.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CAction.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CChatInfo.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CFLAI.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CHouse.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CPlayer.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CProtocol.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CProtocol_code.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CRoom.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CUser.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\model_comm.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\RingBuf.h" />
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\communication\RingBuffer.h" />
+    <ClInclude Include="..\Classes\GameScene.h" />
+    <ClInclude Include="..\Classes\HouseScene.h" />
+    <ClInclude Include="..\Classes\LogInScene.h" />
+    <ClInclude Include="..\Classes\ParabolaTo.h" />
+    <ClInclude Include="..\Classes\RoomScene.h" />
+    <ClInclude Include="..\Classes\channel_cocos.h" />
+    <ClInclude Include="..\Classes\global_cocos.h" />
+    <ClInclude Include="AbstractMap.h" />
+    <ClInclude Include="CCharBattleGirl.h" />
+    <ClInclude Include="LFTalkText.h" />
+    <ClInclude Include="LFTextWithBack.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="MapGround.h" />
+    <ClInclude Include="MenuControler.h" />
+    <ClInclude Include="PopupLayer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ShowAction.h" />
+    <ClInclude Include="ShowScreen.h" />
+    <ClInclude Include="StateHandler.h" />
+    <ClInclude Include="TestGameScene.h" />
+    <ClInclude Include="tool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\CloseNormal.png" />
+    <Image Include="..\Resources\CloseSelected.png" />
+    <Image Include="..\Resources\HelloWorld.png" />
+    <Image Include="res\LF-cocos.ico" />
+    <Image Include="..\Resources\map\Battlefield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LF-cocos.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

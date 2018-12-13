@@ -1,0 +1,4 @@
+#include "CHouse.h"
+
+//
+

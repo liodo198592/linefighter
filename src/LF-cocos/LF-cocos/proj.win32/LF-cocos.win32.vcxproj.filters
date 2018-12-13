@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{c71f91e1-30c5-4fa9-8bdc-c9d22cdf014c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="source\LFClient">
+      <UniqueIdentifier>{c37b91b8-1fe9-431d-bab7-548e941f2839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\LFServer">
+      <UniqueIdentifier>{2c418179-9acd-4137-aa43-3110898fae3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Scene">
+      <UniqueIdentifier>{3045701d-77e5-4d4f-8469-e1fc36191c91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{161b48cc-fb44-4d4d-b98a-2a5e7a078f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\LFCharactor">
+      <UniqueIdentifier>{ba7d41db-1967-44f6-95ef-b44ccd92ab84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\LFLable">
+      <UniqueIdentifier>{6c5bd7e1-a679-42f6-89be-c8af48317148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{ec52ecd0-ceb9-432b-85d7-4998ff2b4b8c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{9c118233-ba7f-4a9f-9e21-0d0878c947e4}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="resource\maps">
+      <UniqueIdentifier>{5ea7a4c7-d237-40d5-b7a6-bc7d5e965130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Scene\network">
+      <UniqueIdentifier>{37fa3473-8c77-469b-aa98-6c742b37fefc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Scene\story">
+      <UniqueIdentifier>{92141349-a417-4c91-b780-4e79b4292fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Scene\story\cris">
+      <UniqueIdentifier>{4b1e6814-fcc4-49a0-bda5-ec0d5ff15092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\state">
+      <UniqueIdentifier>{16f5038a-f0dd-401c-92e2-463c36a016b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Scene\intro">
+      <UniqueIdentifier>{7f3aba93-1108-4399-8493-1f6d6322936e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\texiao">
+      <UniqueIdentifier>{1881432e-7b24-4a70-a488-f847a3d553b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="PopupLayer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LFClient\CClientStatus.cpp">
+      <Filter>source\LFClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LFClient\CClientStatusGame.cpp">
+      <Filter>source\LFClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LFClient\CClientStatusHouse.cpp">
+      <Filter>source\LFClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LFClient\CClientStatusLogIn.cpp">
+      <Filter>source\LFClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LFClient\CClientStatusRoom.cpp">
+      <Filter>source\LFClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ConsoleShow.cpp">
+      <Filter>source\LFClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LFClient\PlayerFactory.cpp">
+      <Filter>source\LFClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CAction.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CChatInfo.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CFLAI.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CHouse.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CPlayer.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CProtocol.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CRoom.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CUser.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\RingBuf.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\communication\Ringbuffer.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LogInScene.cpp">
+      <Filter>source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\channel_cocos.cpp">
+      <Filter>source\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\global_cocos.cpp">
+      <Filter>source\common</Filter>
+    </ClCompile>
+    <ClCompile Include="tool.cpp">
+      <Filter>source\common</Filter>
+    </ClCompile>
+    <ClCompile Include="CCharBattleGirl.cpp">
+      <Filter>source\LFCharactor</Filter>
+    </ClCompile>
+    <ClCompile Include="LFTextWithBack.cpp">
+      <Filter>source\LFLable</Filter>
+    </ClCompile>
+    <ClCompile Include="MapGround.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowScreen.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractMap.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowAction.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>source\Scene\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HouseScene.cpp">
+      <Filter>source\Scene\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RoomScene.cpp">
+      <Filter>source\Scene\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CEngine.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CharaSelectScene.cpp">
+      <Filter>source\Scene\story</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ChrisScene1.cpp">
+      <Filter>source\Scene\story\cris</Filter>
+    </ClCompile>
+    <ClCompile Include="LFTalkText.cpp">
+      <Filter>source\LFLable</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGameScene.cpp">
+      <Filter>source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LFClient\CClientStatusSingle.cpp">
+      <Filter>source\LFClient</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuControler.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="StateHandler.cpp">
+      <Filter>source\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\C_lineFighter_Server\lineFighter\CFormatUnit.cpp">
+      <Filter>source\LFServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LFClient\ClientStatusGameBase.cpp">
+      <Filter>source\LFClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IntroScene.cpp">
+      <Filter>source\Scene\intro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParabolaTo.cpp">
+      <Filter>source\texiao</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\LFClient\CClientStatus.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LFClient\CClientStatusGame.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LFClient\CClientStatusHouse.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LFClient\CClientStatusLogIn.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LFClient\CClientStatusRoom.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ConsoleShow.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LFClient\PlayerFactory.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LFClient\status_comm.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CAction.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CChatInfo.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CFLAI.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CHouse.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CPlayer.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CProtocol.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CProtocol_code.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CRoom.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CUser.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\model_comm.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\RingBuf.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\communication\RingBuffer.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LogInScene.h">
+      <Filter>source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\channel_cocos.h">
+      <Filter>source\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\global_cocos.h">
+      <Filter>source\common</Filter>
+    </ClInclude>
+    <ClInclude Include="CCharBattleGirl.h">
+      <Filter>source\LFCharactor</Filter>
+    </ClInclude>
+    <ClInclude Include="LFTextWithBack.h">
+      <Filter>source\LFLable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="PopupLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="MapGround.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowScreen.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractMap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CFormatUnit.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowAction.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>source\Scene\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HouseScene.h">
+      <Filter>source\Scene\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RoomScene.h">
+      <Filter>source\Scene\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\C_lineFighter_Server\lineFighter\CEngine.h">
+      <Filter>source\LFServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CharaSelectScene.h">
+      <Filter>source\Scene\story</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChrisScene1.h">
+      <Filter>source\Scene\story\cris</Filter>
+    </ClInclude>
+    <ClInclude Include="LFTalkText.h">
+      <Filter>source\LFLable</Filter>
+    </ClInclude>
+    <ClInclude Include="TestGameScene.h">
+      <Filter>source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="tool.h">
+      <Filter>source\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LFClient\CClientStatusSingle.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuControler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LFClient\ClientStatusGameBase.h">
+      <Filter>source\LFClient</Filter>
+    </ClInclude>
+    <ClInclude Include="StateHandler.h">
+      <Filter>source\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IntroScene.h">
+      <Filter>source\Scene\intro</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParabolaTo.h">
+      <Filter>source\texiao</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\CloseNormal.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseSelected.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\HelloWorld.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="res\LF-cocos.ico">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\map\Battlefield.png">
+      <Filter>resource\maps</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LF-cocos.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

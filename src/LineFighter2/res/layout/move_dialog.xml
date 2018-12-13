@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wow_panda"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+    
+    <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="选择移动位置"/>
+    
+    <TableLayout
+        android:id="@+id/move_dialog_tablelayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2" >
+    
+        <TableRow>
+          <Button 
+            android:id="@+id/move_dailog_11"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="X1Y1"/>
+        
+          <Button 
+            android:id="@+id/move_dailog_12"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="X1Y2"/>
+        
+          <Button 
+            android:id="@+id/move_dailog_13"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="X1Y3"/>
+          </TableRow>
+        
+        <TableRow>
+
+            <Button
+                android:id="@+id/move_dailog_21"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="X2Y2" />
+
+            <Button
+                android:id="@+id/move_dailog_22"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="X2Y1" />
+
+            <Button
+                android:id="@+id/move_dailog_23"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="X2Y3" />
+
+        </TableRow>
+        
+        <TableRow>
+        	 <Button
+		        android:id="@+id/move_dailog_left"
+		        android:layout_width="100dip"
+		        android:layout_height="wrap_content"
+		        android:text="LEFT" />
+
+    		<Button
+		        android:id="@+id/move_dailog_right"
+		        android:layout_width="100dip"
+		        android:layout_height="wrap_content"
+		        android:text="RIGHT" />
+        </TableRow>
+        
+    </TableLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="10dip">
+
+        </RelativeLayout>
+
+    
+
+</LinearLayout>
